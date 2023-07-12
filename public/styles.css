@@ -1,0 +1,118 @@
+body {
+  background-color: rgb(145, 33, 33);
+  font-size: 20px;
+  color: rgb(206, 191, 191);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#magic-8-ball {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px; /* Increase the margin to move the image lower */
+  text-align: center;
+}
+
+img {
+  max-width: 50%;
+  height: auto;
+}
+
+#main-title {
+  color: rgb(206, 191, 191);
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#sub-title {
+  color: rgb(75, 5, 5);
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#magic-8-ball-image {
+  width: auto;
+  display: block;
+  max-width: 15%;
+  padding-top: 1%;
+  margin: 40px auto 20px; /* Increase the top margin to move the image lower */
+}
+
+#question-input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 32px;
+}
+
+#ask-button {
+  margin-bottom: 20px;
+  color: rgb(75, 5, 5);
+  background-color: rgb(206, 191, 191);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#reset-button {
+  margin-top: 20px;
+  color: rgb(75, 5, 5);
+  background-color: rgb(206, 191, 191);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#share-button {
+  margin-top: 20px;
+  color: rgb(75, 5, 5);
+  background-color: rgb(206, 191, 191);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Slide styles */
+
+#loading-slide,
+#intro-slide,
+#question-slide,
+#answer-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+#loading-slide p,
+#intro-slide p,
+#question-slide p {
+  margin: 10px;
+  white-space: pre-line;
+}
+
+#answer-slide p {
+  margin: 10px;
+}
