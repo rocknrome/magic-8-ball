@@ -39,7 +39,7 @@ function handleButtonClick() {
             gearsSlide.style.display = 'none';
             answerSlide.style.display = 'block';
 
-            fetch('/answer')
+            fetch('/answer-daffy')
                 .then(response => response.json())
                 .then(data => {
                     const answer = data.answer;
@@ -68,14 +68,14 @@ function resetApp() {
 // Function to share via email
 function shareViaEmail() {
     const answer = answerContainer.textContent;
-    const emailBody = `Check out the Magic 8 Ball answer I received: ${answer}`;
-    const emailLink = `mailto:?subject=Magic 8 Ball Answer&body=${encodeURIComponent(emailBody)}`;
+    const emailBody = `Check out Daffy Duck's Magic 8 Ball answer I received: ${answer}`;
+    const emailLink = `mailto:?subject=Daffy Duck's Magic 8 Ball Answer&body=${encodeURIComponent(emailBody)}`;
     window.location.href = emailLink;
 }
 
-// Function to switch to Daffy's Oracle
-function switchToDaffyOracle() {
-    window.location.href = './daffy.html';
+// Function to switch to the Main Oracle
+function switchToMainOracle() {
+    window.location.href = '../index.html';
 }
 
 // Add event listeners
@@ -86,4 +86,4 @@ resetButton.addEventListener('click', resetApp);
 
 shareButton.addEventListener('click', shareViaEmail);
 
-switchVersionButton.addEventListener('click', switchToDaffyOracle);
+switchVersionButton.addEventListener('click', switchToMainOracle);
