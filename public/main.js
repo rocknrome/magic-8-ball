@@ -17,36 +17,38 @@ questionSlide.style.display = 'none';
 gearsSlide.style.display = 'none';
 answerSlide.style.display = 'none';
 
-// Wait for 2 seconds, then switch to the intro slide
+// Wait for 3 seconds, then switch to the intro slide
 setTimeout(() => {
     loadingSlide.style.display = 'none';
     introSlide.style.display = 'block';
-    setTimeout(() => {
-        introSlide.style.display = 'none';
-        questionSlide.style.display = 'block';
-    }, 3000);
 }, 3000);
+
+// Wait for another 3 seconds, then switch to the question slide
+setTimeout(() => {
+    introSlide.style.display = 'none';
+    questionSlide.style.display = 'block';
+}, 6000);
 
 // Function to handle button click
 function handleButtonClick() {
-    const question = questionInput.value.trim();
+    const question = questionInput.value.trim(); //remove empty spaces before and after the question input
 
-    if (question !== '') {
-        questionSlide.style.display = 'none';
-        gearsSlide.style.display = 'block';
+    if (question !== '') { //checking if the input is not empty
+        questionSlide.style.display = 'none'; //removes the curent slide
+        gearsSlide.style.display = 'block'; //shows the gears slide
 
         setTimeout(() => {
-            gearsSlide.style.display = 'none';
-            answerSlide.style.display = 'block';
+            gearsSlide.style.display = 'none'; //once time out is over, the gears slide gets removed
+            answerSlide.style.display = 'block'; //the answer slide presented
 
-            fetch('/answer')
-                .then(response => response.json())
-                .then(data => {
+            fetch('/answer') //the answer gets requested from the server. (promise)
+                .then(response => response.json()) //receiving the answer and parcing it as json (callback function)
+                .then(data => { //receving data and defining the callback function to handle it (method called on the promise)
                     const answer = data.answer;
-                    displayAnswer(answer);
+                    displayAnswer(answer); //function with retrieved answer as argument
                 })
                 .catch(error => {
-                    console.error('Error:', error);
+                    console.error('Error:', error); //handling any occuring errors
                 });
         }, 6000);
     }

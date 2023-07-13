@@ -49,9 +49,9 @@ img {
 }
 
 #daffy-duck-image {
-  width: auto;
   display: block;
-  
+  width:700px;
+  object-fit: contain;
   padding-top: 1%;
   margin: 40px auto 20px; /* Increase the top margin to move the image lower */
 }
