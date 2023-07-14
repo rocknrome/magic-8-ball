@@ -1,5 +1,5 @@
 
-[8ball-main](https://github.com/rocknrome/magic-8-ball/assets/126816805/6144718d-2363-4291-ab0a-a6684c9182ac)
+![8ball-main](https://github.com/rocknrome/magic-8-ball/assets/126816805/fcfbb890-0bfc-4f0c-86fb-656b48e4e7dd)
 
 # Magic 8 Ball
 
