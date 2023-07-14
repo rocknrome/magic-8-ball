@@ -1,6 +1,9 @@
 
 ![8ball-main](https://github.com/rocknrome/magic-8-ball/assets/126816805/6144718d-2363-4291-ab0a-a6684c9182ac)
 
+![5a3a504e939f59 69678345151377108660474624](https://github.com/rocknrome/magic-8-ball/assets/126816805/ada9632c-868c-4996-8b13-c15c8938abaf)
+
+
 # Magic 8 Ball
 
 The Magic 8 Ball is an interactive web application that provides mystical answers to user's questions. It utilizes JavaScript, HTML, and CSS for the frontend, and Node.js with Express for the backend.
