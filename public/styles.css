@@ -51,7 +51,7 @@ img {
 #magic-8-ball-image {
   width: auto;
   display: block;
-  max-width: 15%;
+  max-width: 100%;
   padding-top: 1%;
   margin: 40px auto 20px; /* Increase the top margin to move the image lower */
 }
