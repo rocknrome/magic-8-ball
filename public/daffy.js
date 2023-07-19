@@ -46,7 +46,7 @@ function handleButtonClick() {
                     displayAnswer(answer);
                 })
                 .catch(error => {
-                    console.error('Error:', error);
+                    console.error('The enchantment server ran out of aura:', error);
                 });
         }, 6000);
     }
