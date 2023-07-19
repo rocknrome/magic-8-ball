@@ -51,13 +51,10 @@ app.get('/answer-daffy', (req, res) => {
 });
 
 // Start the server
-app.listen(3001, () => {
+app.listen(3000, () => {
   console.log(`
 Ah, behold!
 The Mystic Server has awakened,
-casting its mystical aura upon port 3001.
-Let its enchanting powers guide the way
-to wondrous experiences
-and magical encounters.
+casting its mystical aura upon port 3000.
 `);
 });
