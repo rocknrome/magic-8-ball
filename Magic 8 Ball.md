@@ -34,7 +34,7 @@ The Magic 8 Ball is an interactive web application that provides mystical answer
    node server.js
    ```
 
-2. Open your web browser and visit `http://localhost:3001`.
+2. Open your web browser and visit `http://localhost:3000`.
 
 3. Follow the on-screen instructions to ask a question and receive a mystical answer from the Magic 8 Ball.
 
